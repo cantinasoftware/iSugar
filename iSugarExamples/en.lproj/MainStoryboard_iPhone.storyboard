@@ -34,6 +34,26 @@
                                             <segue destination="IhQ-ZI-Bbj" kind="push" id="EVs-Gj-zO1"/>
                                         </connections>
                                     </tableViewCell>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" textLabel="zE5-9T-3NL" style="IBUITableViewCellStyleDefault" id="2Q5-pW-it3">
+                                        <rect key="frame" x="0.0" y="44" width="320" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="0.0" y="0.0" width="300" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="ActionSheet" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="zE5-9T-3NL">
+                                                    <rect key="frame" x="10" y="0.0" width="280" height="43"/>
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                </label>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </view>
+                                        <connections>
+                                            <segue destination="0hR-ZS-JPL" kind="push" id="qhY-Mp-zLN"/>
+                                        </connections>
+                                    </tableViewCell>
                                 </cells>
                             </tableViewSection>
                         </sections>
@@ -58,6 +78,37 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="d7V-mv-5qT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-872" y="-231"/>
+        </scene>
+        <!--Action Sheet Example Controller-->
+        <scene sceneID="Rm0-j5-gvQ">
+            <objects>
+                <viewController id="0hR-ZS-JPL" customClass="UIActionSheetExampleController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="rrE-J2-7Ln">
+                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ci5-MZ-Lvc">
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="ci5-MZ-Lvc" firstAttribute="trailing" secondItem="rrE-J2-7Ln" secondAttribute="trailing" type="default" id="A8U-cq-86p"/>
+                            <constraint firstItem="ci5-MZ-Lvc" firstAttribute="leading" secondItem="rrE-J2-7Ln" secondAttribute="leading" type="default" id="D9d-PN-SG6"/>
+                            <constraint firstItem="ci5-MZ-Lvc" firstAttribute="top" secondItem="rrE-J2-7Ln" secondAttribute="top" type="default" id="DQ6-7v-Ckt"/>
+                            <constraint firstItem="ci5-MZ-Lvc" firstAttribute="bottom" secondItem="rrE-J2-7Ln" secondAttribute="bottom" type="default" id="aUv-pn-uXq"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="QAv-Ck-sGi"/>
+                    <connections>
+                        <outlet property="textView" destination="ci5-MZ-Lvc" id="UJy-co-cJR"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uoq-iw-chN" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="455" y="456"/>
         </scene>
         <!--Alert View Example Controller-->
         <scene sceneID="C2k-Rc-6wO">
@@ -88,12 +139,18 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hXS-lZ-Cjd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="488" y="-235"/>
+            <point key="canvasLocation" x="461" y="-214"/>
         </scene>
     </scenes>
     <classes>
         <class className="NSLayoutConstraint" superclassName="NSObject">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
+        </class>
+        <class className="UIActionSheetExampleController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/UIActionSheetExampleController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="textView" candidateClass="UITextView"/>
+            </relationships>
         </class>
         <class className="UIAlertViewExampleController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/UIAlertViewExampleController.h"/>

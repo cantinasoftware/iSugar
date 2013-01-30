@@ -46,6 +46,9 @@
 		9928C09C16B9347F00661BDA /* libiSugar.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9928C04416B9319600661BDA /* libiSugar.a */; };
 		9928C09F16B9369900661BDA /* UIAlertView+iSugar.m in Sources */ = {isa = PBXBuildFile; fileRef = 9928C07016B931AD00661BDA /* UIAlertView+iSugar.m */; };
 		9928C0A016B938C200661BDA /* UIAlertView+iSugar.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 9928C06F16B931AD00661BDA /* UIAlertView+iSugar.h */; };
+		9928C0AC16B9466900661BDA /* UIActionSheet+iSugar.m in Sources */ = {isa = PBXBuildFile; fileRef = 9928C0AB16B9466900661BDA /* UIActionSheet+iSugar.m */; };
+		9928C0AD16B9467300661BDA /* UIActionSheet+iSugar.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 9928C0AA16B9466900661BDA /* UIActionSheet+iSugar.h */; };
+		9928C0B016B946B300661BDA /* UIActionSheetExampleController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9928C0AF16B946B300661BDA /* UIActionSheetExampleController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -81,6 +84,7 @@
 			files = (
 				9928C04D16B9319600661BDA /* iSugar.h in CopyFiles */,
 				9928C0A016B938C200661BDA /* UIAlertView+iSugar.h in CopyFiles */,
+				9928C0AD16B9467300661BDA /* UIActionSheet+iSugar.h in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -115,6 +119,10 @@
 		9928C09116B931DC00661BDA /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
 		9928C09916B9347300661BDA /* UIAlertViewExampleController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIAlertViewExampleController.h; sourceTree = "<group>"; };
 		9928C09A16B9347300661BDA /* UIAlertViewExampleController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIAlertViewExampleController.m; sourceTree = "<group>"; };
+		9928C0AA16B9466900661BDA /* UIActionSheet+iSugar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIActionSheet+iSugar.h"; sourceTree = "<group>"; };
+		9928C0AB16B9466900661BDA /* UIActionSheet+iSugar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIActionSheet+iSugar.m"; sourceTree = "<group>"; };
+		9928C0AE16B946B300661BDA /* UIActionSheetExampleController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIActionSheetExampleController.h; sourceTree = "<group>"; };
+		9928C0AF16B946B300661BDA /* UIActionSheetExampleController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIActionSheetExampleController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -190,6 +198,8 @@
 				9928C06F16B931AD00661BDA /* UIAlertView+iSugar.h */,
 				9928C07016B931AD00661BDA /* UIAlertView+iSugar.m */,
 				9928C04A16B9319600661BDA /* Supporting Files */,
+				9928C0AA16B9466900661BDA /* UIActionSheet+iSugar.h */,
+				9928C0AB16B9466900661BDA /* UIActionSheet+iSugar.m */,
 			);
 			path = iSugar;
 			sourceTree = "<group>";
@@ -231,6 +241,8 @@
 				9928C07C16B931DB00661BDA /* Supporting Files */,
 				9928C09916B9347300661BDA /* UIAlertViewExampleController.h */,
 				9928C09A16B9347300661BDA /* UIAlertViewExampleController.m */,
+				9928C0AE16B946B300661BDA /* UIActionSheetExampleController.h */,
+				9928C0AF16B946B300661BDA /* UIActionSheetExampleController.m */,
 			);
 			path = iSugarExamples;
 			sourceTree = "<group>";
@@ -410,6 +422,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9928C09F16B9369900661BDA /* UIAlertView+iSugar.m in Sources */,
+				9928C0AC16B9466900661BDA /* UIActionSheet+iSugar.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -429,6 +442,7 @@
 				9928C08216B931DB00661BDA /* main.m in Sources */,
 				9928C08616B931DB00661BDA /* AppDelegate.m in Sources */,
 				9928C09B16B9347300661BDA /* UIAlertViewExampleController.m in Sources */,
+				9928C0B016B946B300661BDA /* UIActionSheetExampleController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

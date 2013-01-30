@@ -8,3 +8,4 @@
 
 #import <Foundation/Foundation.h>
 #import <iSugar/UIAlertView+iSugar.h>
+#import <iSugar/UIActionSheet+iSugar.h>
