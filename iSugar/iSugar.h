@@ -7,7 +7,4 @@
 //
 
 #import <Foundation/Foundation.h>
-
-@interface iSugar : NSObject
-
-@end
+#import <iSugar/UIAlertView+iSugar.h>

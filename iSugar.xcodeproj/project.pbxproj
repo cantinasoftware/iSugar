@@ -6,10 +6,24 @@
 	objectVersion = 46;
 	objects = {
 
+/* Begin PBXAggregateTarget section */
+		9928C0A216B93A0800661BDA /* Framework */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 9928C0A316B93A0800661BDA /* Build configuration list for PBXAggregateTarget "Framework" */;
+			buildPhases = (
+				9928C0A816B93A3000661BDA /* Build Framework Script */,
+			);
+			dependencies = (
+				9928C0A716B93A1300661BDA /* PBXTargetDependency */,
+			);
+			name = Framework;
+			productName = Framework;
+		};
+/* End PBXAggregateTarget section */
+
 /* Begin PBXBuildFile section */
 		9928C04816B9319600661BDA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9928C04716B9319600661BDA /* Foundation.framework */; };
 		9928C04D16B9319600661BDA /* iSugar.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 9928C04C16B9319600661BDA /* iSugar.h */; };
-		9928C04F16B9319600661BDA /* iSugar.m in Sources */ = {isa = PBXBuildFile; fileRef = 9928C04E16B9319600661BDA /* iSugar.m */; };
 		9928C05716B9319600661BDA /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9928C05616B9319600661BDA /* SenTestingKit.framework */; };
 		9928C05916B9319600661BDA /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9928C05816B9319600661BDA /* UIKit.framework */; };
 		9928C05A16B9319600661BDA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9928C04716B9319600661BDA /* Foundation.framework */; };
@@ -31,6 +45,7 @@
 		9928C09B16B9347300661BDA /* UIAlertViewExampleController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9928C09A16B9347300661BDA /* UIAlertViewExampleController.m */; };
 		9928C09C16B9347F00661BDA /* libiSugar.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9928C04416B9319600661BDA /* libiSugar.a */; };
 		9928C09F16B9369900661BDA /* UIAlertView+iSugar.m in Sources */ = {isa = PBXBuildFile; fileRef = 9928C07016B931AD00661BDA /* UIAlertView+iSugar.m */; };
+		9928C0A016B938C200661BDA /* UIAlertView+iSugar.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 9928C06F16B931AD00661BDA /* UIAlertView+iSugar.h */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +63,13 @@
 			remoteGlobalIDString = 9928C04316B9319600661BDA;
 			remoteInfo = iSugar;
 		};
+		9928C0A616B93A1300661BDA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9928C03C16B9319600661BDA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9928C04316B9319600661BDA;
+			remoteInfo = iSugar;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -58,6 +80,7 @@
 			dstSubfolderSpec = 16;
 			files = (
 				9928C04D16B9319600661BDA /* iSugar.h in CopyFiles */,
+				9928C0A016B938C200661BDA /* UIAlertView+iSugar.h in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,7 +91,6 @@
 		9928C04716B9319600661BDA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		9928C04B16B9319600661BDA /* iSugar-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "iSugar-Prefix.pch"; sourceTree = "<group>"; };
 		9928C04C16B9319600661BDA /* iSugar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = iSugar.h; sourceTree = "<group>"; };
-		9928C04E16B9319600661BDA /* iSugar.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = iSugar.m; sourceTree = "<group>"; };
 		9928C05516B9319600661BDA /* iSugarTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iSugarTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9928C05616B9319600661BDA /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
 		9928C05816B9319600661BDA /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
@@ -165,7 +187,6 @@
 			isa = PBXGroup;
 			children = (
 				9928C04C16B9319600661BDA /* iSugar.h */,
-				9928C04E16B9319600661BDA /* iSugar.m */,
 				9928C06F16B931AD00661BDA /* UIAlertView+iSugar.h */,
 				9928C07016B931AD00661BDA /* UIAlertView+iSugar.m */,
 				9928C04A16B9319600661BDA /* Supporting Files */,
@@ -238,6 +259,7 @@
 				9928C04016B9319600661BDA /* Sources */,
 				9928C04116B9319600661BDA /* Frameworks */,
 				9928C04216B9319600661BDA /* CopyFiles */,
+				9928C0A116B939DF00661BDA /* Prepare Framework Script */,
 			);
 			buildRules = (
 			);
@@ -309,6 +331,7 @@
 				9928C04316B9319600661BDA /* iSugar */,
 				9928C05416B9319600661BDA /* iSugarTests */,
 				9928C07516B931DB00661BDA /* iSugarExamples */,
+				9928C0A216B93A0800661BDA /* Framework */,
 			);
 		};
 /* End PBXProject section */
@@ -351,6 +374,34 @@
 			shellPath = /bin/sh;
 			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
 		};
+		9928C0A116B939DF00661BDA /* Prepare Framework Script */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Prepare Framework Script";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e\n\nmkdir -p \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.framework/Versions/A/Headers\"\n\n# Link the \"Current\" version to \"A\"\n/bin/ln -sfh A \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.framework/Versions/Current\"\n/bin/ln -sfh Versions/Current/Headers \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.framework/Headers\"\n/bin/ln -sfh \"Versions/Current/${PRODUCT_NAME}\" \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.framework/${PRODUCT_NAME}\"\n\n# The -a ensures that the headers maintain the source modification date so that we don't constantly\n# cause propagating rebuilds of files that import these headers.\n/bin/cp -a \"${TARGET_BUILD_DIR}/include/${PRODUCT_NAME}\" \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.framework/Versions/A/Headers\"\n\n";
+		};
+		9928C0A816B93A3000661BDA /* Build Framework Script */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Build Framework Script";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e\nset +u\n# Avoid recursively calling this script.\nif [[ $SF_MASTER_SCRIPT_RUNNING ]]\nthen\nexit 0\nfi\nset -u\nexport SF_MASTER_SCRIPT_RUNNING=1\n\nSF_TARGET_NAME=${PROJECT_NAME}\nSF_EXECUTABLE_PATH=\"lib${SF_TARGET_NAME}.a\"\nSF_WRAPPER_NAME=\"${SF_TARGET_NAME}.framework\"\n\n# The following conditionals come from\n# https://github.com/kstenerud/iOS-Universal-Framework\n\nif [[ \"$SDK_NAME\" =~ ([A-Za-z]+) ]]\nthen\nSF_SDK_PLATFORM=${BASH_REMATCH[1]}\nelse\necho \"Could not find platform name from SDK_NAME: $SDK_NAME\"\nexit 1\nfi\n\nif [[ \"$SDK_NAME\" =~ ([0-9]+.*$) ]]\nthen\nSF_SDK_VERSION=${BASH_REMATCH[1]}\nelse\necho \"Could not find sdk version from SDK_NAME: $SDK_NAME\"\nexit 1\nfi\n\nif [[ \"$SF_SDK_PLATFORM\" = \"iphoneos\" ]]\nthen\nSF_OTHER_PLATFORM=iphonesimulator\nelse\nSF_OTHER_PLATFORM=iphoneos\nfi\n\nif [[ \"$BUILT_PRODUCTS_DIR\" =~ (.*)$SF_SDK_PLATFORM$ ]]\nthen\nSF_OTHER_BUILT_PRODUCTS_DIR=\"${BASH_REMATCH[1]}${SF_OTHER_PLATFORM}\"\nelse\necho \"Could not find platform name from build products directory: $BUILT_PRODUCTS_DIR\"\nexit 1\nfi\n\n# Build the other platform.\nxcodebuild -project \"${PROJECT_FILE_PATH}\" -target \"${TARGET_NAME}\" -configuration \"${CONFIGURATION}\" -sdk ${SF_OTHER_PLATFORM}${SF_SDK_VERSION} BUILD_DIR=\"${BUILD_DIR}\" OBJROOT=\"${OBJROOT}\" BUILD_ROOT=\"${BUILD_ROOT}\" SYMROOT=\"${SYMROOT}\" $ACTION\n\n# Smash the two static libraries into one fat binary and store it in the .framework\nlipo -create \"${BUILT_PRODUCTS_DIR}/${SF_EXECUTABLE_PATH}\" \"${SF_OTHER_BUILT_PRODUCTS_DIR}/${SF_EXECUTABLE_PATH}\" -output \"${BUILT_PRODUCTS_DIR}/${SF_WRAPPER_NAME}/Versions/A/${SF_TARGET_NAME}\"\n\n# Copy the binary to the other architecture folder to have a complete framework in both.\ncp -a \"${BUILT_PRODUCTS_DIR}/${SF_WRAPPER_NAME}/Versions/A/${SF_TARGET_NAME}\" \"${SF_OTHER_BUILT_PRODUCTS_DIR}/${SF_WRAPPER_NAME}/Versions/A/${SF_TARGET_NAME}\"\n\nrsync -a \"${BUILT_PRODUCTS_DIR}/${SF_WRAPPER_NAME}/\" \"${PROJECT_DIR}/${SF_WRAPPER_NAME}/\"\necho \"${BUILT_PRODUCTS_DIR}/${SF_WRAPPER_NAME}/\"";
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -358,7 +409,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9928C04F16B9319600661BDA /* iSugar.m in Sources */,
 				9928C09F16B9369900661BDA /* UIAlertView+iSugar.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -394,6 +444,11 @@
 			isa = PBXTargetDependency;
 			target = 9928C04316B9319600661BDA /* iSugar */;
 			targetProxy = 9928C09D16B9367D00661BDA /* PBXContainerItemProxy */;
+		};
+		9928C0A716B93A1300661BDA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9928C04316B9319600661BDA /* iSugar */;
+			targetProxy = 9928C0A616B93A1300661BDA /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -446,6 +501,7 @@
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -464,6 +520,7 @@
 					"-all_load",
 				);
 				SDKROOT = iphoneos;
+				STRIP_STYLE = "non-global";
 			};
 			name = Debug;
 		};
@@ -479,7 +536,8 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				COPY_PHASE_STRIP = YES;
+				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
@@ -490,6 +548,7 @@
 					"-all_load",
 				);
 				SDKROOT = iphoneos;
+				STRIP_STYLE = "non-global";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -583,6 +642,20 @@
 			};
 			name = Release;
 		};
+		9928C0A416B93A0800661BDA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		9928C0A516B93A0800661BDA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -621,6 +694,14 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		9928C0A316B93A0800661BDA /* Build configuration list for PBXAggregateTarget "Framework" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9928C0A416B93A0800661BDA /* Debug */,
+				9928C0A516B93A0800661BDA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};
