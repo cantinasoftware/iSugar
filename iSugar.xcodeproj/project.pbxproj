@@ -16,10 +16,32 @@
 		9928C05D16B9319600661BDA /* libiSugar.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9928C04416B9319600661BDA /* libiSugar.a */; };
 		9928C06316B9319600661BDA /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9928C06116B9319600661BDA /* InfoPlist.strings */; };
 		9928C06616B9319600661BDA /* iSugarTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9928C06516B9319600661BDA /* iSugarTests.m */; };
+		9928C07116B931AD00661BDA /* UIAlertView+iSugar.m in Sources */ = {isa = PBXBuildFile; fileRef = 9928C07016B931AD00661BDA /* UIAlertView+iSugar.m */; };
+		9928C07716B931DB00661BDA /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9928C05816B9319600661BDA /* UIKit.framework */; };
+		9928C07816B931DB00661BDA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9928C04716B9319600661BDA /* Foundation.framework */; };
+		9928C07A16B931DB00661BDA /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9928C07916B931DB00661BDA /* CoreGraphics.framework */; };
+		9928C08016B931DB00661BDA /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9928C07E16B931DB00661BDA /* InfoPlist.strings */; };
+		9928C08216B931DB00661BDA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9928C08116B931DB00661BDA /* main.m */; };
+		9928C08616B931DB00661BDA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9928C08516B931DB00661BDA /* AppDelegate.m */; };
+		9928C08816B931DB00661BDA /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 9928C08716B931DB00661BDA /* Default.png */; };
+		9928C08A16B931DB00661BDA /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9928C08916B931DB00661BDA /* Default@2x.png */; };
+		9928C08C16B931DC00661BDA /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9928C08B16B931DC00661BDA /* Default-568h@2x.png */; };
+		9928C08F16B931DC00661BDA /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9928C08D16B931DC00661BDA /* MainStoryboard_iPhone.storyboard */; };
+		9928C09216B931DC00661BDA /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9928C09016B931DC00661BDA /* MainStoryboard_iPad.storyboard */; };
+		9928C09B16B9347300661BDA /* UIAlertViewExampleController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9928C09A16B9347300661BDA /* UIAlertViewExampleController.m */; };
+		9928C09C16B9347F00661BDA /* libiSugar.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9928C04416B9319600661BDA /* libiSugar.a */; };
+		9928C09F16B9369900661BDA /* UIAlertView+iSugar.m in Sources */ = {isa = PBXBuildFile; fileRef = 9928C07016B931AD00661BDA /* UIAlertView+iSugar.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
 		9928C05B16B9319600661BDA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9928C03C16B9319600661BDA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9928C04316B9319600661BDA;
+			remoteInfo = iSugar;
+		};
+		9928C09D16B9367D00661BDA /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 9928C03C16B9319600661BDA /* Project object */;
 			proxyType = 1;
@@ -54,6 +76,23 @@
 		9928C06216B9319600661BDA /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		9928C06416B9319600661BDA /* iSugarTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = iSugarTests.h; sourceTree = "<group>"; };
 		9928C06516B9319600661BDA /* iSugarTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = iSugarTests.m; sourceTree = "<group>"; };
+		9928C06F16B931AD00661BDA /* UIAlertView+iSugar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIAlertView+iSugar.h"; sourceTree = "<group>"; };
+		9928C07016B931AD00661BDA /* UIAlertView+iSugar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIAlertView+iSugar.m"; sourceTree = "<group>"; };
+		9928C07616B931DB00661BDA /* iSugarExamples.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iSugarExamples.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9928C07916B931DB00661BDA /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		9928C07D16B931DB00661BDA /* iSugarExamples-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "iSugarExamples-Info.plist"; sourceTree = "<group>"; };
+		9928C07F16B931DB00661BDA /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		9928C08116B931DB00661BDA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		9928C08316B931DB00661BDA /* iSugarExamples-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "iSugarExamples-Prefix.pch"; sourceTree = "<group>"; };
+		9928C08416B931DB00661BDA /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		9928C08516B931DB00661BDA /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		9928C08716B931DB00661BDA /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		9928C08916B931DB00661BDA /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		9928C08B16B931DC00661BDA /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		9928C08E16B931DC00661BDA /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
+		9928C09116B931DC00661BDA /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
+		9928C09916B9347300661BDA /* UIAlertViewExampleController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIAlertViewExampleController.h; sourceTree = "<group>"; };
+		9928C09A16B9347300661BDA /* UIAlertViewExampleController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIAlertViewExampleController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +115,17 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		9928C07316B931DB00661BDA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9928C09C16B9347F00661BDA /* libiSugar.a in Frameworks */,
+				9928C07716B931DB00661BDA /* UIKit.framework in Frameworks */,
+				9928C07816B931DB00661BDA /* Foundation.framework in Frameworks */,
+				9928C07A16B931DB00661BDA /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -84,6 +134,7 @@
 			children = (
 				9928C04916B9319600661BDA /* iSugar */,
 				9928C05E16B9319600661BDA /* iSugarTests */,
+				9928C07B16B931DB00661BDA /* iSugarExamples */,
 				9928C04616B9319600661BDA /* Frameworks */,
 				9928C04516B9319600661BDA /* Products */,
 			);
@@ -94,6 +145,7 @@
 			children = (
 				9928C04416B9319600661BDA /* libiSugar.a */,
 				9928C05516B9319600661BDA /* iSugarTests.octest */,
+				9928C07616B931DB00661BDA /* iSugarExamples.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -104,6 +156,7 @@
 				9928C04716B9319600661BDA /* Foundation.framework */,
 				9928C05616B9319600661BDA /* SenTestingKit.framework */,
 				9928C05816B9319600661BDA /* UIKit.framework */,
+				9928C07916B931DB00661BDA /* CoreGraphics.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -113,6 +166,8 @@
 			children = (
 				9928C04C16B9319600661BDA /* iSugar.h */,
 				9928C04E16B9319600661BDA /* iSugar.m */,
+				9928C06F16B931AD00661BDA /* UIAlertView+iSugar.h */,
+				9928C07016B931AD00661BDA /* UIAlertView+iSugar.m */,
 				9928C04A16B9319600661BDA /* Supporting Files */,
 			);
 			path = iSugar;
@@ -141,6 +196,34 @@
 			children = (
 				9928C06016B9319600661BDA /* iSugarTests-Info.plist */,
 				9928C06116B9319600661BDA /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		9928C07B16B931DB00661BDA /* iSugarExamples */ = {
+			isa = PBXGroup;
+			children = (
+				9928C08416B931DB00661BDA /* AppDelegate.h */,
+				9928C08516B931DB00661BDA /* AppDelegate.m */,
+				9928C08D16B931DC00661BDA /* MainStoryboard_iPhone.storyboard */,
+				9928C09016B931DC00661BDA /* MainStoryboard_iPad.storyboard */,
+				9928C07C16B931DB00661BDA /* Supporting Files */,
+				9928C09916B9347300661BDA /* UIAlertViewExampleController.h */,
+				9928C09A16B9347300661BDA /* UIAlertViewExampleController.m */,
+			);
+			path = iSugarExamples;
+			sourceTree = "<group>";
+		};
+		9928C07C16B931DB00661BDA /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				9928C07D16B931DB00661BDA /* iSugarExamples-Info.plist */,
+				9928C07E16B931DB00661BDA /* InfoPlist.strings */,
+				9928C08116B931DB00661BDA /* main.m */,
+				9928C08316B931DB00661BDA /* iSugarExamples-Prefix.pch */,
+				9928C08716B931DB00661BDA /* Default.png */,
+				9928C08916B931DB00661BDA /* Default@2x.png */,
+				9928C08B16B931DC00661BDA /* Default-568h@2x.png */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -184,6 +267,24 @@
 			productReference = 9928C05516B9319600661BDA /* iSugarTests.octest */;
 			productType = "com.apple.product-type.bundle";
 		};
+		9928C07516B931DB00661BDA /* iSugarExamples */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9928C09616B931DC00661BDA /* Build configuration list for PBXNativeTarget "iSugarExamples" */;
+			buildPhases = (
+				9928C07216B931DB00661BDA /* Sources */,
+				9928C07316B931DB00661BDA /* Frameworks */,
+				9928C07416B931DB00661BDA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9928C09E16B9367D00661BDA /* PBXTargetDependency */,
+			);
+			name = iSugarExamples;
+			productName = iSugarExamples;
+			productReference = 9928C07616B931DB00661BDA /* iSugarExamples.app */;
+			productType = "com.apple.product-type.application";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -207,6 +308,7 @@
 			targets = (
 				9928C04316B9319600661BDA /* iSugar */,
 				9928C05416B9319600661BDA /* iSugarTests */,
+				9928C07516B931DB00661BDA /* iSugarExamples */,
 			);
 		};
 /* End PBXProject section */
@@ -217,6 +319,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				9928C06316B9319600661BDA /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9928C07416B931DB00661BDA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9928C08016B931DB00661BDA /* InfoPlist.strings in Resources */,
+				9928C08816B931DB00661BDA /* Default.png in Resources */,
+				9928C08A16B931DB00661BDA /* Default@2x.png in Resources */,
+				9928C08C16B931DC00661BDA /* Default-568h@2x.png in Resources */,
+				9928C08F16B931DC00661BDA /* MainStoryboard_iPhone.storyboard in Resources */,
+				9928C09216B931DC00661BDA /* MainStoryboard_iPad.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -244,6 +359,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9928C04F16B9319600661BDA /* iSugar.m in Sources */,
+				9928C09F16B9369900661BDA /* UIAlertView+iSugar.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -252,6 +368,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				9928C06616B9319600661BDA /* iSugarTests.m in Sources */,
+				9928C07116B931AD00661BDA /* UIAlertView+iSugar.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9928C07216B931DB00661BDA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9928C08216B931DB00661BDA /* main.m in Sources */,
+				9928C08616B931DB00661BDA /* AppDelegate.m in Sources */,
+				9928C09B16B9347300661BDA /* UIAlertViewExampleController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -263,6 +390,11 @@
 			target = 9928C04316B9319600661BDA /* iSugar */;
 			targetProxy = 9928C05B16B9319600661BDA /* PBXContainerItemProxy */;
 		};
+		9928C09E16B9367D00661BDA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9928C04316B9319600661BDA /* iSugar */;
+			targetProxy = 9928C09D16B9367D00661BDA /* PBXContainerItemProxy */;
+		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
@@ -272,6 +404,30 @@
 				9928C06216B9319600661BDA /* en */,
 			);
 			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		9928C07E16B931DB00661BDA /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9928C07F16B931DB00661BDA /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		9928C08D16B931DC00661BDA /* MainStoryboard_iPhone.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9928C08E16B931DC00661BDA /* en */,
+			);
+			name = MainStoryboard_iPhone.storyboard;
+			sourceTree = "<group>";
+		};
+		9928C09016B931DC00661BDA /* MainStoryboard_iPad.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9928C09116B931DC00661BDA /* en */,
+			);
+			name = MainStoryboard_iPad.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -303,6 +459,10 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-all_load",
+				);
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
@@ -325,6 +485,10 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-all_load",
+				);
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -384,6 +548,41 @@
 			};
 			name = Release;
 		};
+		9928C09716B931DC00661BDA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SYSTEM_APPS_DIR)/Xcode.app/Contents/Developer/Library/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "iSugarExamples/iSugarExamples-Prefix.pch";
+				INFOPLIST_FILE = "iSugarExamples/iSugarExamples-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		9928C09816B931DC00661BDA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SYSTEM_APPS_DIR)/Xcode.app/Contents/Developer/Library/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "iSugarExamples/iSugarExamples-Prefix.pch";
+				INFOPLIST_FILE = "iSugarExamples/iSugarExamples-Info.plist";
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -403,6 +602,7 @@
 				9928C06B16B9319600661BDA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9928C06C16B9319600661BDA /* Build configuration list for PBXNativeTarget "iSugarTests" */ = {
 			isa = XCConfigurationList;
@@ -411,6 +611,16 @@
 				9928C06E16B9319600661BDA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9928C09616B931DC00661BDA /* Build configuration list for PBXNativeTarget "iSugarExamples" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9928C09716B931DC00661BDA /* Debug */,
+				9928C09816B931DC00661BDA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
