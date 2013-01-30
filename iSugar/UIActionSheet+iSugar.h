@@ -9,5 +9,6 @@
 #import <UIKit/UIKit.h>
 
 @interface UIActionSheet (iSugar)
++ (id) actionSheetWithTitle:(NSString *)title onClick:(void(^)(UIActionSheet *actionSheet, NSInteger index))onClick cancelButtonTitle:(NSString *)cancelButtonTitle destructiveButtonTitle:(NSString *)destructiveButtonTitle otherButtonTitles:(NSString *)otherButtonTitles, ... NS_REQUIRES_NIL_TERMINATION;
 - (id) initWithTitle:(NSString *)title onClick:(void(^)(UIActionSheet *actionSheet, NSInteger index))onClick cancelButtonTitle:(NSString *)cancelButtonTitle destructiveButtonTitle:(NSString *)destructiveButtonTitle otherButtonTitles:(NSString *)otherButtonTitles, ... NS_REQUIRES_NIL_TERMINATION;
 @end
