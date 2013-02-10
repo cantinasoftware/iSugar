@@ -29,7 +29,7 @@
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
     self.label.text = @"";
-    [[UIAlertView alertViewWithTitle:@"Sample Alert" message:@"Sample Message" cancelButtonTitle:@"Cancel" onClick:^(UIAlertView *alertView, NSInteger index) {
+    [[UIAlertView alertWithTitle:@"Sample Alert" message:@"Sample Message" cancelButtonTitle:@"Cancel" onClick:^(UIAlertView *alertView, NSInteger index) {
         self.label.text = [NSString stringWithFormat:@"Clicked button at index %i with label %@", index, [alertView buttonTitleAtIndex:index]];
     } otherButtonTitles:@"Sample Choice 1", @"Sample Choice 2", nil] show];
 }

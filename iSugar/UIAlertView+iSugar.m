@@ -23,7 +23,7 @@
 @end
 
 @implementation UIAlertView (iSugar)
-+ (id) alertViewWithTitle:(NSString *)title message:(NSString *)message cancelButtonTitle:(NSString *)cancelButtonTitle onClick:(void (^)(UIAlertView *, NSInteger))onClick otherButtonTitles:(NSString *)otherButtonTitles, ...
++ (id) alertWithTitle:(NSString *)title message:(NSString *)message cancelButtonTitle:(NSString *)cancelButtonTitle onClick:(void (^)(UIAlertView *, NSInteger))onClick otherButtonTitles:(NSString *)otherButtonTitles, ...
 {
     id result = [[UIAlertView alloc] initWithTitle:title message:message cancelButtonTitle:cancelButtonTitle onClick:onClick otherButtonTitles:nil];
     va_list args;
