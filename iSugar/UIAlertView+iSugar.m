@@ -12,29 +12,11 @@
 @property (nonatomic, strong) void(^onClick)(NSInteger clickedButtonIndex);
 @end
 
-@implementation _UIAlertViewDelegate
-
-- (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex
-{
-    if (self.onClick)
-        self.onClick(buttonIndex);
-}
+@interface _UIAlertView : UIAlertView
+- (id) initWithTitle:(NSString *)title message:(NSString *)message cancelButtonTitle:(NSString *)cancelButtonTitle onClick:(void(^)(UIAlertView *alertView, NSInteger clickedButtonIndex))onClick otherButtonTitles:(NSString *)otherButtonTitles, ...;
 
 @end
-
-@implementation UIAlertView (iSugar)
-+ (id) alertWithTitle:(NSString *)title message:(NSString *)message cancelButtonTitle:(NSString *)cancelButtonTitle onClick:(void (^)(UIAlertView *, NSInteger))onClick otherButtonTitles:(NSString *)otherButtonTitles, ...
-{
-    id result = [[UIAlertView alloc] initWithTitle:title message:message cancelButtonTitle:cancelButtonTitle onClick:onClick otherButtonTitles:nil];
-    va_list args;
-    va_start(args, otherButtonTitles);
-    
-    for (NSString *arg = otherButtonTitles; arg != nil; arg = va_arg(args, NSString*)) {
-        [result addButtonWithTitle:arg];
-    }
-    va_end(args);
-    return result;
-}
+@implementation _UIAlertView
 
 - (id) initWithTitle:(NSString *)title message:(NSString *)message cancelButtonTitle:(NSString *)cancelButtonTitle onClick:(void(^)(UIAlertView *alertView, NSInteger clickedButtonIndex))onClick otherButtonTitles:(NSString *)otherButtonTitles, ...
 {
@@ -48,10 +30,10 @@
             onClick(self, i);
             
             // Break the retain cycle here, delegate gets deallocated
-            #pragma clang diagnostic push
-            #pragma clang diagnostic ignored "-Warc-retain-cycles"
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Warc-retain-cycles"
             delegate.onClick = nil;
-            #pragma clang diagnostic pop
+#pragma clang diagnostic pop
         };
         
         
@@ -67,5 +49,39 @@
     
     
 }
+
+- (NSInteger)firstOtherButtonIndex
+{
+    if (-1 != self.cancelButtonIndex && 1 < self.numberOfButtons) {
+        return 1;
+    }
+    return [super firstOtherButtonIndex];
+}
+@end
+
+@implementation _UIAlertViewDelegate
+
+- (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex
+{
+    if (self.onClick)
+        self.onClick(buttonIndex);
+}
+
+@end
+
+@implementation UIAlertView (iSugar)
++ (id) alertWithTitle:(NSString *)title message:(NSString *)message cancelButtonTitle:(NSString *)cancelButtonTitle onClick:(void (^)(UIAlertView *, NSInteger))onClick otherButtonTitles:(NSString *)otherButtonTitles, ...
+{
+    id result = [[_UIAlertView alloc] initWithTitle:title message:message cancelButtonTitle:cancelButtonTitle onClick:onClick otherButtonTitles:nil];
+    va_list args;
+    va_start(args, otherButtonTitles);
+    
+    for (NSString *arg = otherButtonTitles; arg != nil; arg = va_arg(args, NSString*)) {
+        [result addButtonWithTitle:arg];
+    }
+    va_end(args);
+    return result;
+}
+
 
 @end
