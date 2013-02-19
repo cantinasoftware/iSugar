@@ -30,7 +30,6 @@
 		9928C05D16B9319600661BDA /* libiSugar.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9928C04416B9319600661BDA /* libiSugar.a */; };
 		9928C06316B9319600661BDA /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9928C06116B9319600661BDA /* InfoPlist.strings */; };
 		9928C06616B9319600661BDA /* iSugarTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9928C06516B9319600661BDA /* iSugarTests.m */; };
-		9928C07116B931AD00661BDA /* UIAlertView+iSugar.m in Sources */ = {isa = PBXBuildFile; fileRef = 9928C07016B931AD00661BDA /* UIAlertView+iSugar.m */; };
 		9928C07716B931DB00661BDA /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9928C05816B9319600661BDA /* UIKit.framework */; };
 		9928C07816B931DB00661BDA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9928C04716B9319600661BDA /* Foundation.framework */; };
 		9928C07A16B931DB00661BDA /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9928C07916B931DB00661BDA /* CoreGraphics.framework */; };
@@ -431,7 +430,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				9928C06616B9319600661BDA /* iSugarTests.m in Sources */,
-				9928C07116B931AD00661BDA /* UIAlertView+iSugar.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -594,6 +592,7 @@
 		9928C06D16B9319600661BDA /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/iSugarExamples.app/iSugarExamples";
 				FRAMEWORK_SEARCH_PATHS = (
 					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
 					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
@@ -602,6 +601,7 @@
 				GCC_PREFIX_HEADER = "iSugar/iSugar-Prefix.pch";
 				INFOPLIST_FILE = "iSugarTests/iSugarTests-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = octest;
 			};
 			name = Debug;
@@ -609,6 +609,7 @@
 		9928C06E16B9319600661BDA /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/iSugarExamples.app/iSugarExamples";
 				FRAMEWORK_SEARCH_PATHS = (
 					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
 					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
@@ -617,6 +618,7 @@
 				GCC_PREFIX_HEADER = "iSugar/iSugar-Prefix.pch";
 				INFOPLIST_FILE = "iSugarTests/iSugarTests-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = octest;
 			};
 			name = Release;
@@ -716,6 +718,7 @@
 				9928C0A516B93A0800661BDA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
