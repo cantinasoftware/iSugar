@@ -36,12 +36,19 @@
 
 - (void)testActionSheet
 {
-    return;
     UIActionSheet *actionSheet = [UIActionSheet actionSheetWithTitle:@"title" onClick:^(UIActionSheet *actionSheet, NSInteger index) {} cancelButtonTitle:@"cancel" destructiveButtonTitle:@"destruct" otherButtonTitles:@"firstother", @"secondother", nil];
-    STAssertEqualObjects(@"cancel", [actionSheet buttonTitleAtIndex:actionSheet.cancelButtonIndex], @"Cancel button title is right");
-    STAssertEqualObjects(@"destruct", [actionSheet buttonTitleAtIndex:actionSheet.destructiveButtonIndex], @"Destructive button title is right");
-    STAssertEqualObjects(@"firstother", [actionSheet buttonTitleAtIndex:actionSheet.firstOtherButtonIndex], @"Other button title is right");
-    STAssertEqualObjects(@"secondother", [actionSheet buttonTitleAtIndex:2], @"Second other button title is right");
+
+    UIActionSheet *actionSheet1 = [[UIActionSheet alloc] initWithTitle:@"title" delegate:nil cancelButtonTitle:@"cancel" destructiveButtonTitle:@"destruct" otherButtonTitles:@"firstother", @"secondother", nil];
+
+    for (int i = 0; i < actionSheet.numberOfButtons; i++)
+        NSLog(@"%@", [actionSheet buttonTitleAtIndex:i]);
+    NSLog(@"first:%i cancel:%i destruct:%i total:%i", actionSheet.firstOtherButtonIndex, actionSheet.cancelButtonIndex,actionSheet.destructiveButtonIndex, actionSheet.numberOfButtons);
+    for (int i = 0; i < actionSheet1.numberOfButtons; i++)
+        NSLog(@"%@", [actionSheet1 buttonTitleAtIndex:i]);
+    NSLog(@"first:%i cancel:%i destruct:%i total:%i", actionSheet1.firstOtherButtonIndex, actionSheet1.cancelButtonIndex,actionSheet1.destructiveButtonIndex, actionSheet.numberOfButtons);
+    STAssertEquals(actionSheet.firstOtherButtonIndex, actionSheet1.firstOtherButtonIndex, @"First button");
+    STAssertEquals(actionSheet.cancelButtonIndex, actionSheet1.cancelButtonIndex, @"Cancel button");
+    STAssertEquals(actionSheet.destructiveButtonIndex, actionSheet1.destructiveButtonIndex, @"Destruct button");
 }
 
 
